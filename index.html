@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta placeholder="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://academy.profesional.ticmas.io/favicon.ico">
+    <title>Proyecto Integrador - CV</title>
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Steven Armstrong</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">PROYECTO</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Streven Armstrong</span>, Desarrollador de inteligencias artificiales.</h2>
+                <p class="descripcion">Bienvenidos a mi portafolio. </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Steven.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Steven Armstrong</span></h2>
+            <h3>Desarrollador de IA</h3>
+            <p>Tengo 27 años y soy desarrollador de IA en <strong>IMP.</strong></p>
+            <p>Anteriormente fui autodidacta en <strong>Machine Learning</strong> y graduado de la Facultad de Artes UNT de Tucumán en la carrera de <strong>Producción músical.</strong>
+             </p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTO ACTUAL -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mi Servicio</h3>
+        <div class="fila">
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-music"></i></span>
+                <h4>Desarrollador de IA músical</h4>
+                <hr>
+                <p>Actualmente trabajo para <strong>"Indie Music Proyect"</strong> en la creación de una IA capaz de generar bandas
+                sonoras de alta complejidad para diferentes producciones audiovisuales independientes <strong>(Films y Videojuegos)</strong> </p>
+            </div>
+
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html, Css y Javascript</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Producción Musical</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="pm"></div>
+            </div>   
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Machine Learning</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ml"></div>
+            </div>   
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/pms.jpg" alt="">
+                <div class="info">
+                    <h4>Curso de Producción Musical</h4>
+                    <p>Música</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ia.jpeg" alt="">
+                <div class="info">
+                    <h4>Música generada por IA</h4>
+                    <p>Música - IA</p>
+                </div>
+            </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- SECCTION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea placeholder="Mensaje" id="" cols="30" rows="10" class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
